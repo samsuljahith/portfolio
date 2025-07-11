@@ -77,8 +77,8 @@ export default function Portfolio() {
     },
     {
       title: "Math Tutor Agent",
-      description: "Personalized AI tutor using LangChain + LangGraph with agentic memory and symbolic math reasoning capabilities.",
-      techStack: ["LangChain", "LangGraph", "AI Agents"],
+      description: "Personalized AI tutor using LangGraph with agentic memory and symbolic math reasoning capabilities.",
+      techStack: ["LangGraph", "AI Agents", "Python"],
       color: "from-accent to-primary",
     },
     {
@@ -112,7 +112,7 @@ export default function Portfolio() {
       color: "from-accent to-primary",
     },
     {
-      title: "Building Systems with LangChain",
+      title: "Building Systems with LangGraph",
       provider: "In Progress",
       icon: "fas fa-link",
       progress: 75,
@@ -125,7 +125,7 @@ export default function Portfolio() {
     { name: "SQL", icon: "fas fa-database", color: "text-secondary" },
     { name: "Power BI", icon: "fas fa-chart-bar", color: "text-accent" },
     { name: "AWS", icon: "fas fa-cloud", color: "text-primary" },
-    { name: "LangChain", icon: "fas fa-robot", color: "text-secondary" },
+    { name: "LangGraph", icon: "fas fa-robot", color: "text-secondary" },
     { name: "OpenAI APIs", icon: "fas fa-brain", color: "text-accent" },
   ];
 
