@@ -47,10 +47,16 @@ export default function Portfolio() {
   };
 
   const handleResumeDownload = () => {
-    // TODO: Replace with actual resume URL
+    const link = document.createElement('a');
+    link.href = '/resume.txt';
+    link.download = 'Samsul_Jahith_S_Resume.txt';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    
     toast({
-      title: "Resume Download",
-      description: "Resume download functionality will be implemented with actual resume file.",
+      title: "Resume Downloaded",
+      description: "Resume has been downloaded successfully!",
     });
   };
 
@@ -121,12 +127,14 @@ export default function Portfolio() {
   ];
 
   const skills = [
-    { name: "Python", icon: "fab fa-python", color: "text-primary" },
-    { name: "SQL", icon: "fas fa-database", color: "text-secondary" },
-    { name: "Power BI", icon: "fas fa-chart-bar", color: "text-accent" },
-    { name: "AWS", icon: "fas fa-cloud", color: "text-primary" },
-    { name: "LangGraph", icon: "fas fa-robot", color: "text-secondary" },
-    { name: "OpenAI APIs", icon: "fas fa-brain", color: "text-accent" },
+    { name: "LangGraph", icon: "fas fa-robot", color: "text-primary" },
+    { name: "Neural Networks", icon: "fas fa-brain", color: "text-secondary" },
+    { name: "RAG Systems", icon: "fas fa-search", color: "text-accent" },
+    { name: "Vector DBs", icon: "fas fa-database", color: "text-primary" },
+    { name: "Transformers", icon: "fas fa-cog", color: "text-secondary" },
+    { name: "Python", icon: "fab fa-python", color: "text-accent" },
+    { name: "Hugging Face", icon: "fas fa-robot", color: "text-primary" },
+    { name: "OpenAI API", icon: "fas fa-brain", color: "text-secondary" },
   ];
 
   return (
@@ -191,7 +199,7 @@ export default function Portfolio() {
               </span>
             </div>
             <p className="text-lg md:text-xl text-gray-400 mb-8 code-font">
-              Data Analyst | AI Enthusiast
+              Data Analyst | Aspiring AI Engineer
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -270,8 +278,8 @@ export default function Portfolio() {
                     </div>
                     <div className="mt-6 p-4 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg border border-primary/20">
                       <p className="text-center text-gray-300">
-                        <span className="text-primary font-semibold">Transitioning from Data to AI</span><br />
-                        Focus on Generative AI and AI Agent Systems
+                        <span className="text-primary font-semibold">Aspiring AI Engineer</span><br />
+                        Building intelligent agentic systems with LangGraph and Vector Databases
                       </p>
                     </div>
                   </CardContent>
