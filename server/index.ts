@@ -60,8 +60,9 @@ app.use((req, res, next) => {
   // Other ports are firewalled. Default to 5000 if not specified.
   // this serves both the API and the client.
   // It is the only port that is not firewalled.
-  const port = parseInt(process.env.PORT || '5000', 10);
-  server.listen(port, "127.0.0.1", () => {
-    log(`serving on port ${port}`);
+  // Use process.env.PORT for Render compatibility, fallback to 3000
+  const port = parseInt(process.env.PORT || '3000', 10);
+  app.listen(port, () => {
+    console.log(`[express] serving on port ${port}`);
   });
 })();
