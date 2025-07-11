@@ -1,0 +1,55 @@
+Create a personal portfolio website using HTML, CSS, and JavaScript.
+
+🎨 Style:
+- Use a modern **dark theme** with a clean layout.
+- Include **smooth animations**: section fades, button hovers, scroll-in effects.
+- Use Google Fonts and subtle glowing highlights for a futuristic feel.
+
+📄 Sections:
+1. **Hero Section**  
+   - Name: **Samsul Jahith S**
+   - Tagline: *"Turning Data into Decisions. Building the Future with AI."*
+   - Subtitle: *Data Analyst | AI Enthusiast*
+   - Include animated background particles or a typing text effect.
+
+2. **About Me**  
+   - B.Tech in Information Technology from Panimalar Institute of Technology (CGPA: 7.52)
+   - 1 Year of Experience as a Data Analyst at TATTI (Chennai)
+   - 10 Months Internship at Fizon Tech
+   - Skilled in Python, SQL, Power BI, Excel, AWS, LangGraph, LangChain, OpenAI APIs
+   - Transitioning from Data to AI with focus on Generative AI and AI Agent Systems
+
+3. **Projects**  
+   Display as animated cards with short descriptions and tech stack:
+   - **UNO Trade Dashboard**  
+     • Web scraped 30K+ rows of trade data using BeautifulSoup + Selenium  
+     • Built interactive dashboards in Power BI  
+   - **Sales Data Dashboard**  
+     • Used Pandas and Power BI to analyze trends and KPIs  
+   - **Math Tutor Agent** (LangChain + LangGraph)  
+     • Personalized AI tutor using agentic memory and symbolic math reasoning  
+   - **RAG-Based QA System**  
+     • Built educational search assistant with Pinecone + HuggingFace embeddings
+
+4. **Certifications**  
+   - Generative AI with LLMs (DeepLearning.AI)
+   - Google Data Analytics (Coursera)
+   - Power BI for Beginners (Great Learning)
+   - Building Systems with LangChain (in progress)
+
+5. **Resume Download**  
+   - Button to download PDF resume
+
+6. **Contact Me**  
+   - Email: samsuljahith@gmail.com  
+   - Phone: +91 7806888524  
+   - LinkedIn: [linkedin.com/in/samsul-jahith](https://linkedin.com/in/samsul-jahith)  
+   - GitHub: [github.com/samsuljahith](https://github.com/samsuljahith)
+
+🔧 Extra Features:
+- Sticky navigation bar with smooth scrolling
+- Mobile responsive design
+- Dark mode toggle (optional)
+- Scroll-based reveal animations using JS
+
+Write clean, well-commented HTML, CSS, and JavaScript code suitable for editing and publishing on GitHub Pages or Replit.

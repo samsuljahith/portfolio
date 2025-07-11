@@ -1,0 +1,48 @@
+Build a modern, fully responsive personal portfolio website using HTML, CSS, and JavaScript with the following features:
+
+🌙 Theme & Design:
+- Use a **dark theme** with deep blues or black backgrounds.
+- Add **animated particle background** in the hero section using a library like `particles.js` or custom CSS/JS.
+- Use **modern fonts** like Poppins or Montserrat via Google Fonts.
+- Add smooth fade-in and slide-in animations using CSS or JavaScript for each section.
+
+🧑‍💻 Hero Section:
+- Fullscreen hero section with name: "Samsul Jahith S"
+- Subtitle: "Data Analyst | AI Enthusiast"
+- Tagline: "Turning Data into Decisions. Building the Future with AI."
+- Add a glowing call-to-action button: "View My Work"
+- Include animated background (particles or soft glow)
+
+📚 About Me Section:
+- Short paragraph introducing me:
+  "B.Tech in Information Technology from Panimalar Institute of Technology. 1 year experience at TATTI as a Data Analyst. Skilled in Python, SQL, Power BI, and Generative AI tools like LangGraph and LangChain. Passionate about creating intelligent AI systems."
+
+💼 Projects Section:
+- Use card layout or grid
+- Include:
+  1. UNO Trade Dashboard – Data scraped using Python, dashboards in Power BI.
+  2. Sales Data Dashboard – KPI tracking with DAX and Power BI.
+  3. Math Tutor AI Agent – Personalized agent built with LangChain + LangGraph.
+  4. RAG QA System – Built using Pinecone and Hugging Face.
+
+📜 Certifications:
+- Google Data Analytics (Coursera)
+- Generative AI with LLMs (DeepLearning.AI)
+- Power BI for Beginners (Great Learning)
+
+📁 Resume:
+- Add a button to download resume (use placeholder link)
+
+📞 Contact:
+- Email: samsuljahith@gmail.com
+- Phone: +91 7806888524
+- LinkedIn and GitHub links with icons
+
+💡 Requirements:
+- Sticky navbar with smooth scroll
+- All sections should be animated on scroll
+- Site should look modern and sleek
+- Mobile responsive
+- Use external libraries where needed (e.g., particles.js)
+
+Write clean, well-structured HTML, CSS (in a separate file), and JavaScript. Use classes and IDs logically.
