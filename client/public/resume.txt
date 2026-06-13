@@ -1,52 +1,67 @@
 Samsul Jahith S
-Location: Ramapuram, Chennai, Tamil Nadu, India – 600089 | samsuljahith@gmail.com | +91 7806888524
-linkedin.com/in/samsul-jahith | github.com/samsuljahith
+Location: Singapore | samsuljahith@gmail.com | +65 8911 4350
+linkedin.com/in/samsul-jahith | github.com/samsuljahith | samsul-jahith-portfolio.onrender.com
 
-Career Objective
-Aspiring AI Engineer with a strong foundation in Generative AI, Neural Networks, and LLM-based architectures.
-Passionate about building intelligent agentic systems using LangChain, LangGraph, and Vector Databases. Hands-on in
-RAG, Transformers, and custom AI agent development for educational and business automation use cases.
+Summary
+AI Engineer and MSc Data Science student (University of Hertfordshire, 2026) with hands-on experience building
+agentic AI systems, multi-agent pipelines, RAG architectures, and LLM applications. Hackathon builder, research
+collaborator, and active contributor to the Singapore AI community. AWS AI Practitioner certified.
 
 Skills
-• AI/ML: Deep Learning, Neural Networks, RNN, Transformers, Attention Mechanism, Transfer Learning
-• Generative AI: LLMs, Prompt Engineering, LangChain, LangGraph, RAG, Vector DBs, OpenAI Functions
-• Programming: Python, SQL, Pandas, NumPy, Matplotlib, Streamlit, Bash
-• Tools Platforms: OpenAI API, Hugging Face, Pinecone, FAISS, Weaviate, LangSmith
-• Cloud/Dev: Google Colab, Git, GitHub, Jupyter, VS Code, Docker (Basics)
+• AI/ML & Frameworks: LLMs, RAG (Corrective/Hybrid/Agentic), Multi-Agent Systems, NLP, Transformers, Prompt Engineering
+  LangChain, LangGraph, LlamaIndex, FastAPI, FAISS, ChromaDB, Qdrant, Pinecone, Hugging Face, Docker
+• Programming & Data: Python, SQL, Pandas, NumPy, Streamlit, Bash, TypeScript, Next.js, React, Tailwind CSS
+  Matplotlib, Plotly, Power BI
+• AI Governance: Responsible AI, Bias Detection & Fairness, Explainability (SHAP/LIME)
+  IMDA AI Governance Framework, MAS FEAT, PDPA, EU AI Act
 
 Projects
-Math Tutor Agent using Agentic AI (LangChain + LangGraph)                                                       2025
-• Created an AI math tutor agent using LangGraph and LangChain's multi-agent capabilities.
-• Integrated OpenAI models for natural language reasoning and symbolic math.
-• Embedded concept retrieval using FAISS and RAG for real-time, personalized answers.
+SuperAI NEXT Hackathon — Existential Crisis Robot (Rogue PSLE Agent Detection)                          Jun 2026
+• Built a 3-agent web system detecting rogue AI intent from behavioral signals
+• Integrated local Kokoro-ONNX TTS server connected to Arduino robot via WebSocket
+• Stack: Next.js 15 / TypeScript / Tailwind on Vercel, Google Gemini 2.0 Flash REST API
 
-RAG-based Educational QA System                                                                                 2025
-• Built a Retrieval-Augmented Generation pipeline using Pinecone and Hugging Face embeddings.
-• Enabled document-aware QA experience using semantic search and context windowing.
-• Deployed on Streamlit with user input and history tracking.
+BriefMe — AI Sales Meeting Prep Agent                                                                   Jun 2026
+• Shipped in 60 minutes at AI Build Lab Singapore (Build Club × Singtel × SMU AI)
+• Generates full company briefings in 30s using Exa + Gemini 2.5 Flash + Mem0 persistent memory
+• Deployed on Netlify
 
-UNO Trade Dashboard (Data Analyst Project)                                                                      2024
-• Scraped and cleaned 30K+ rows of import/export data using BeautifulSoup and Selenium.
-• Developed interactive dashboards in Power BI for visualizing trade by country and commodity.
-• Automated data collection workflow with scheduling and status monitoring.
+NeamForge — Agentic Static Site Generator                                                               2026
+• Agentic Python pipeline with build-verify loop and validation logic
+• Git-based checkpoints for full reproducibility. Fully local execution for governance compliance
+
+NeamClaw — Conversational Support Bot                                                                   2026
+• Hybrid RAG (BM25 + vector search) with NLP-based query understanding
+• SQLite data retrieval, real-time API endpoints, human escalation with session isolation
+
+Ka-Nova Research — JASSS Journal Co-Author (target Aug 2026)                                            2026
+• Contributing LLM Elite Agent Evaluation (Section 4.3) to Generative Agent-Based Model
+• 10,000 Mesa citizen agents, 3 LangChain LLM elite agents, 45,000+ LLM decisions
+• Third author under supervision of Dr. Md Saifullah (dual PhD, Intelligent Systems)
+
+TESTGPT — Agentic AI Testing Orchestrator                                                               2025
+• Multi-agent Python orchestrator for automated test case generation from specifications
+• Structured evaluation logic for AI assurance and compliance testing
 
 Experience
-Data Analyst, TATTI, Chennai                                                                           2024 – Present
-• Built ETL pipelines and automated reporting using Python and SQL.
-• Designed Power BI dashboards to support operational and strategic teams.
-• Conducted trend analysis and anomaly detection to improve data quality.
-• Transitioned into AI/LLM space by learning LangChain, vector DBs, and deploying demo apps.
+Data Analyst — Fizon, Trichy (Remote)                                                            2024 – 2025
+• Automated web data extraction using BeautifulSoup + Selenium, collecting 10,000+ records
+• Performed data cleaning, transformation, and validation to maintain data integrity
+• Built Power BI dashboards to support transparent, data-driven decision-making
 
-Data Analyst Intern, Fizon Tech (Remote)                                                                 2023 – 2024
-• Collected and transformed data from internal web tools and APIs using Python.
-• Created automated pipelines for weekly reporting and dashboard refreshes.
-• Worked closely with senior data engineers to improve query optimization and data modeling.
+Data Analyst Intern — Fizon Tech, Trichy (Remote)                                                2023 – 2024
+• Automated web data collection workflows in Python, improving pipeline reliability
+• Performed data preprocessing and feature extraction for downstream analysis
+• Delivered cleaned datasets and summaries supporting business intelligence workflows
 
 Education
-Panimalar Institute Of Technology                                                                        2019 – 2023
-B.Tech in Information Technology — CGPA: 7.52 / 10
+MSc Data Science — University of Hertfordshire (via PSB Academy, Singapore)                      2026 – 2027
+B.Tech Information Technology — Panimalar Institute of Technology | CGPA: 7.52/10                2019 – 2023
 
 Certifications
-• Generative AI with LLMs - Coursera (DeepLearning.AI)
-• Introduction to LLMs - LinkedIn Learning
-• Building Systems with LangChain (in progress)
+• AWS AI Practitioner — Amazon Web Services
+
+Community
+• Member, LLM Builders Community Singapore
+• SuperAI NEXT Hackathon Participant (Marina Bay Sands, Jun 2026)
+• AI Build Lab Singapore — Build Club × Singtel × SMU AI (Jun 2026)

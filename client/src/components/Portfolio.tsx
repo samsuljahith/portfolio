@@ -67,147 +67,101 @@ export default function Portfolio() {
 
   const skillCategories = [
     {
-      label: "AI / ML",
+      label: "AI/ML & Frameworks",
       color: "from-primary/20 to-primary/30 text-primary",
-      items: ["Deep Learning", "Neural Networks", "Transformers", "Transfer Learning", "RNN", "Attention Mechanism"],
+      items: ["LLMs", "RAG (Corrective/Hybrid/Agentic)", "Multi-Agent Systems", "NLP", "Transformers", "Prompt Engineering", "LangChain", "LangGraph", "LlamaIndex", "FastAPI", "FAISS", "ChromaDB", "Qdrant", "Pinecone", "Hugging Face", "Docker"],
     },
     {
-      label: "Generative AI",
+      label: "Programming & Data",
       color: "from-secondary/20 to-secondary/30 text-secondary",
-      items: ["LLMs", "Prompt Engineering", "LangChain", "LangGraph", "LlamaIndex", "OpenAI Agent SDK"],
+      items: ["Python", "SQL", "Pandas", "NumPy", "Streamlit", "Bash", "TypeScript", "Next.js", "React", "Tailwind CSS", "Matplotlib", "Plotly", "Power BI"],
     },
     {
-      label: "Data & Retrieval",
+      label: "AI Governance",
       color: "from-accent/20 to-accent/30 text-accent",
-      items: ["RAG Pipelines", "Vector Databases", "Pinecone", "FAISS", "Qdrant", "LangSmith"],
-    },
-    {
-      label: "Programming & Tools",
-      color: "from-primary/20 to-secondary/20 text-gray-200",
-      items: ["Python", "SQL", "FastAPI", "Streamlit", "Hugging Face", "Docker (Basic)"],
+      items: ["Responsible AI", "Bias Detection & Fairness", "Explainability (SHAP/LIME)", "IMDA AI Governance Framework", "MAS FEAT", "PDPA", "EU AI Act"],
     },
   ];
 
   const projects = [
     {
-      title: "NeamForge Static Site Generator",
+      title: "SuperAI NEXT Hackathon — Existential Crisis Robot",
       description:
-        "Built a Forge Agent using the Neam language that reads a JSON site spec and iteratively generates a complete static website through an automated build-verify loop. Containerized with Docker Compose (Ollama + Nginx) for fully reproducible local execution.",
-      techStack: ["Neam Agent", "llama3.1", "Docker Compose", "Ollama", "HTML Validation"],
+        "Built a 3-agent web system that detects rogue AI intent from behavioral signals. Agent 1 (Saboteur) covertly picks wrong answers while appearing genuine. Agent 2 generates real-time emotional suspicion readings. Agent 3 adapts strategy in a closed-loop feedback architecture. Integrated local Kokoro-ONNX TTS server connected to an Arduino robot via WebSocket for physical AI embodiment. Stack: Next.js 15 / TypeScript / Tailwind on Vercel, Google Gemini 2.0 Flash REST API.",
+      techStack: ["Multi-Agent AI", "Next.js", "TypeScript", "Gemini", "WebSocket", "TTS"],
+      year: "Jun 2026",
+      github: "https://github.com/nudgytdeveloper/existential-crisis-robot-public",
+      badge: "Hackathon",
+    },
+    {
+      title: "BriefMe — AI Sales Meeting Prep Agent",
+      description:
+        "Shipped in 60 minutes at AI Build Lab Singapore (Build Club × Singtel × SMU AI). Generates full company briefings in 30 seconds using Exa for live web research and Gemini 2.5 Flash for AI synthesis. Integrated Mem0 persistent memory so each client briefing gets smarter over time. Deployed on Netlify.",
+      techStack: ["Next.js", "Exa API", "Mem0", "Gemini 2.5", "Netlify"],
+      year: "Jun 2026",
+      github: "https://github.com/samsuljahith/briefme",
+      badge: "Hackathon",
+    },
+    {
+      title: "NeamForge — Agentic Static Site Generator",
+      description:
+        "Agentic Python pipeline with a build-verify loop and validation logic to ensure output correctness. Implements git-based checkpoints for full reproducibility and auditability of every AI-generated output. Fully local execution for data control and governance compliance.",
+      techStack: ["Python", "Agentic AI", "Git", "Local LLM"],
       year: "2026",
       github: "https://github.com/samsuljahith/neamforge-site-generator",
     },
     {
-      title: "NeamClaw Support Bot",
+      title: "NeamClaw — Conversational Support Bot",
       description:
-        "Persistent conversational support agent with session management and auto-compaction. Integrates hybrid RAG (BM25 + vector) over knowledge docs, SQLite order lookup, ticket creation, and human escalation. Deployed via CLI and HTTP REST API.",
-      techStack: ["Neam Claw Agent", "Hybrid RAG", "BM25", "SQLite", "FastAPI"],
+        "Conversational AI agent using hybrid RAG (BM25 + vector search) and NLP-based query understanding. Integrates SQLite data retrieval, real-time API endpoints, and human escalation pathways with session isolation for safe, production-ready deployment.",
+      techStack: ["RAG", "BM25", "Vector Search", "SQLite", "FastAPI", "NLP"],
       year: "2026",
       github: "https://github.com/samsuljahith/neamclaw-support-bot",
     },
     {
-      title: "Neam-Database",
+      title: "Ka-Nova Research — JASSS Journal Co-Author",
       description:
-        "Lightweight explainable vector database built on FAISS + SQLite + SentenceTransformers. Returns semantic similarity scores with explanations of why documents matched, served via FastAPI.",
-      techStack: ["FAISS", "SQLite", "SentenceTransformers", "FastAPI"],
+        "Contributing LLM Elite Agent Evaluation (Section 4.3) to a Generative Agent-Based Model simulating 50 years of governance with 10,000 Mesa citizen agents and 3 LangChain LLM elite agents. Responsible for output variance analysis (30+ seeds), governance theory alignment scoring, and prompt sensitivity testing across 45,000+ LLM decisions. Third author under supervision of Dr. Md Saifullah (dual PhD, Intelligent Systems).",
+      techStack: ["LangChain", "LLM Evaluation", "Agent-Based Modeling", "Research", "Python"],
       year: "2026",
-      github: "https://github.com/samsuljahith/Neam-Database",
+      github: "https://github.com/KaungOrYours/project-ka-nova",
+      badge: "Research",
     },
     {
-      title: "TESTGPT – Agentic AI Testing Orchestrator",
+      title: "TESTGPT — Agentic AI Testing Orchestrator",
       description:
-        "Orchestrator agent using OpenAI's Agent SDK to coordinate multiple domain-specific test agents (API, UI, DB, NFR). Planning agent parses software specs and generates structured test tasks. Uses Mistral-7B via Groq.",
-      techStack: ["OpenAI Agent SDK", "Mistral-7B", "Groq", "GitHub Actions", "pyproject"],
+        "Multi-agent Python orchestrator for automated test case generation from specifications. Coordinates AI testing workflows across multiple evaluation stages. Applied structured evaluation logic for AI assurance and compliance testing against predefined behavioral requirements.",
+      techStack: ["Python", "Multi-Agent", "OpenAI Agent SDK", "QA", "Compliance"],
       year: "2025",
       github: "https://github.com/samsuljahith/TESTGPT_tester",
-    },
-    {
-      title: "Smart Research Agent (MCP + Agentic RAG)",
-      description:
-        "Local AI research assistant using MCP, LlamaIndex, and Qdrant for document-based RAG with live web fallback. MCP server exposes semantic search and web scraping tools. LlamaIndex function agent dynamically selects tools and streams responses.",
-      techStack: ["MCP", "LlamaIndex", "Qdrant", "FastAPI", "Serper.dev"],
-      year: "2025",
-      github: "https://github.com/samsuljahith/Research_agent",
-    },
-    {
-      title: "Trader Future AGI",
-      description:
-        "Multi-agent AI trading system built with the CrewAI framework. Uses specialized agents to analyze market data, evaluate signals, and execute trading decisions through agent collaboration.",
-      techStack: ["CrewAI", "Multi-Agent", "Python", "Market Analysis"],
-      year: "2025",
-      github: "https://github.com/samsuljahith/Trader-Future-_AGI",
-    },
-    {
-      title: "SQL Learning Agent",
-      description:
-        "AI-powered SQL learning assistant using RAG (LlamaIndex + FAISS), HuggingFace embeddings (BAAI/bge-small-en-v1.5), and Groq's DeepSeek R1 Distill Llama 70B. Interactive CLI interface for SQL help and explanations.",
-      techStack: ["LlamaIndex", "FAISS", "HuggingFace", "Groq", "DeepSeek R1"],
-      year: "2025",
-      github: "https://github.com/samsuljahith/Sql_agent",
-    },
-    {
-      title: "Hashnode Agent",
-      description:
-        "Python agent integrating with Hashnode's API via an MCP (Model Context Protocol) server. Enables AI-powered blog management and content operations through the MCP protocol.",
-      techStack: ["MCP", "Hashnode API", "Python"],
-      year: "2025",
-      github: "https://github.com/samsuljahith/Hashnode_agent",
-    },
-    {
-      title: "Chatbot AI Agent",
-      description:
-        "Conversational chatbot built with LangGraph and Groq's Llama3-8b-8192. Features agentic memory, stateful conversation graphs, and a CLI interface. Also includes a Jupyter notebook version.",
-      techStack: ["LangGraph", "Groq", "Llama3", "LangChain"],
-      year: "2025",
-      github: "https://github.com/samsuljahith/Chatbot-ai-agent",
-    },
-    {
-      title: "Nutrition Suggestion Agent",
-      description:
-        "Smart agent that recommends food based on nutrition goals. Analyzes nutritional data from food datasets and provides personalised dietary recommendations.",
-      techStack: ["Python", "AI Agent", "Nutrition Data", "CSV Analysis"],
-      year: "2025",
-      github: "https://github.com/samsuljahith/Nutrition_agent",
-    },
-    {
-      title: "Data Cleaning Agent",
-      description:
-        "Automated Python agent for cleaning and transforming messy CSV datasets. Handles missing values, outliers, type coercion, and generates clean analysis-ready data.",
-      techStack: ["Python", "Pandas", "NumPy", "CSV Processing"],
-      year: "2025",
-      github: "https://github.com/samsuljahith/Data_Cleaning_agent",
-    },
-    {
-      title: "Web Scraping Agent",
-      description:
-        "Intelligent web scraping agent that autonomously navigates websites, extracts structured data, and handles dynamic content. Supports customizable scraping workflows.",
-      techStack: ["Python", "BeautifulSoup", "Selenium", "AI Agent"],
-      year: "2025",
-      github: "https://github.com/samsuljahith/Scrapping_Agent",
     },
   ];
 
   const certifications = [
     {
-      title: "Generative AI with LLMs",
-      provider: "DeepLearning.AI",
-      icon: "fas fa-brain",
+      title: "AWS AI Practitioner",
+      provider: "Amazon Web Services",
+      icon: "fas fa-cloud",
       progress: 100,
       color: "from-primary to-secondary",
     },
+  ];
+
+  const community = [
     {
-      title: "Introduction to LLMs",
-      provider: "LinkedIn Learning",
-      icon: "fas fa-graduation-cap",
-      progress: 100,
-      color: "from-secondary to-accent",
+      title: "LLM Builders Community Singapore",
+      type: "Member",
+      icon: "fas fa-users",
     },
     {
-      title: "Event-Driven Agentic Document Workflows",
-      provider: "DeepLearning.AI",
-      icon: "fas fa-robot",
-      progress: 100,
-      color: "from-accent to-primary",
+      title: "SuperAI NEXT Hackathon",
+      type: "Marina Bay Sands, Jun 2026",
+      icon: "fas fa-trophy",
+    },
+    {
+      title: "AI Build Lab Singapore",
+      type: "Build Club × Singtel × SMU AI, Jun 2026",
+      icon: "fas fa-lightbulb",
     },
   ];
 
@@ -270,7 +224,7 @@ export default function Portfolio() {
         <div className="container mx-auto px-6 text-center relative z-10">
           <div className="max-w-4xl mx-auto">
             <p className="text-sm code-font text-secondary mb-4 tracking-widest uppercase">
-              AI Engineer · Data Analyst
+              AI Engineer · MSc Data Science
             </p>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
               Samsul Jahith S
@@ -279,8 +233,7 @@ export default function Portfolio() {
               <span className="text-gray-300 border-r-2 border-primary pr-1">{typingText}</span>
             </div>
             <p className="text-gray-400 max-w-2xl mx-auto mb-10 text-base leading-relaxed">
-              Specialised in building agentic AI systems, RAG pipelines, and LLM-based applications.
-              Passionate about Generative AI, autonomous agents, and transforming data into intelligent decisions.
+              AI Engineer and MSc Data Science student (University of Hertfordshire, 2026) with hands-on experience building agentic AI systems, multi-agent pipelines, RAG architectures, and LLM applications. Hackathon builder, research collaborator, and active contributor to the Singapore AI community. AWS AI Practitioner certified.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -319,29 +272,29 @@ export default function Portfolio() {
                       <div className="flex items-start gap-3">
                         <i className="fas fa-graduation-cap text-primary mt-1 shrink-0"></i>
                         <div>
-                          <p className="font-semibold">Master's in Data Science</p>
-                          <p className="text-gray-400 text-sm">University of Hertfordshire · PSB Academy, Singapore · 2026 – Present</p>
+                          <p className="font-semibold">MSc Data Science</p>
+                          <p className="text-gray-400 text-sm">University of Hertfordshire · PSB Academy, Singapore · 2026 – 2027</p>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
                         <i className="fas fa-graduation-cap text-secondary mt-1 shrink-0"></i>
                         <div>
                           <p className="font-semibold">B.Tech in Information Technology</p>
-                          <p className="text-gray-400 text-sm">Panimalar Institute of Technology · CGPA: 7.52 · 2019 – 2023</p>
+                          <p className="text-gray-400 text-sm">Panimalar Institute of Technology · CGPA: 7.52/10 · 2019 – 2023</p>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
                         <i className="fas fa-briefcase text-accent mt-1 shrink-0"></i>
                         <div>
                           <p className="font-semibold">Data Analyst · Fizon, Trichy (Remote)</p>
-                          <p className="text-gray-400 text-sm">2024 – 2025 · Automated ETL pipelines, Power BI dashboards, 10K+ records scraped</p>
+                          <p className="text-gray-400 text-sm">2024 – 2025 · Automated web data extraction using BeautifulSoup + Selenium, 10K+ records. Built Power BI dashboards for data-driven decision-making.</p>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
                         <i className="fas fa-laptop-code text-primary mt-1 shrink-0"></i>
                         <div>
                           <p className="font-semibold">Data Analyst Intern · Fizon Tech (Remote)</p>
-                          <p className="text-gray-400 text-sm">2023 – 2024 · Web data collection, Pandas-based dataset preparation</p>
+                          <p className="text-gray-400 text-sm">2023 – 2024 · Automated web data collection workflows in Python. Delivered cleaned datasets supporting business intelligence.</p>
                         </div>
                       </div>
                     </div>
@@ -353,18 +306,18 @@ export default function Portfolio() {
                   <CardContent className="p-0">
                     <h3 className="text-2xl font-bold mb-6 text-accent">Who I Am</h3>
                     <p className="text-gray-300 leading-relaxed mb-4">
-                      I'm an AI Engineer-focused Data Analyst with hands-on experience building <span className="text-primary font-medium">agentic AI systems</span>, <span className="text-secondary font-medium">RAG pipelines</span>, and <span className="text-accent font-medium">LLM-based applications</span>.
+                      I'm an AI Engineer and MSc Data Science student with hands-on experience building <span className="text-primary font-medium">agentic AI systems</span>, <span className="text-secondary font-medium">multi-agent pipelines</span>, and <span className="text-accent font-medium">RAG architectures</span>.
                     </p>
                     <p className="text-gray-300 leading-relaxed mb-4">
-                      My work spans autonomous agent orchestration, open-source AI library contributions, and intelligent data pipelines. I've built systems that are 100% local, privacy-first, and production-ready.
+                      Hackathon builder, research collaborator (JASSS journal co-author), and active contributor to the Singapore AI community. My work spans autonomous agent orchestration, LLM evaluation, and AI governance.
                     </p>
                     <p className="text-gray-300 leading-relaxed">
-                      Currently pursuing my Master's in Data Science in Singapore, deepening my expertise in advanced ML and AI systems.
+                      AWS AI Practitioner certified. Currently pursuing my Master's in Data Science at University of Hertfordshire via PSB Academy, Singapore.
                     </p>
                     <div className="mt-6 flex flex-wrap gap-3">
                       <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium">Open to Opportunities</span>
                       <span className="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm font-medium">Singapore Based</span>
-                      <span className="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm font-medium">Remote Friendly</span>
+                      <span className="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm font-medium">AWS Certified</span>
                     </div>
                   </CardContent>
                 </Card>
@@ -383,10 +336,10 @@ export default function Portfolio() {
                 Skills & <span className="text-secondary">Expertise</span>
               </h2>
               <p className="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
-                A broad foundation across AI/ML, Generative AI, data engineering, and software tooling.
+                A broad foundation across AI/ML, generative AI, programming, data engineering, and AI governance.
               </p>
             </ScrollReveal>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
               {skillCategories.map((category, catIndex) => (
                 <ScrollReveal key={category.label} delay={catIndex * 150}>
                   <Card className="glass-card rounded-2xl p-6 h-full">
@@ -410,7 +363,7 @@ export default function Portfolio() {
             {/* Additional tools row */}
             <ScrollReveal delay={600}>
               <div className="mt-8 flex flex-wrap justify-center gap-3">
-                {["Pandas", "NumPy", "Matplotlib", "Streamlit", "Bash", "Git", "GitHub Actions", "Jupyter", "VS Code", "Google Colab"].map(
+                {["Git", "GitHub Actions", "Jupyter", "VS Code", "Google Colab", "Selenium", "BeautifulSoup"].map(
                   (tool, i) => (
                     <span
                       key={tool}
@@ -435,7 +388,7 @@ export default function Portfolio() {
                 GitHub <span className="text-secondary">Projects</span>
               </h2>
               <p className="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
-                {projects.length} recent projects spanning agentic AI, RAG systems, multi-agent orchestration, and data engineering.
+                {projects.length} projects spanning agentic AI, multi-agent systems, RAG architectures, and AI governance research.
               </p>
             </ScrollReveal>
             <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
@@ -448,7 +401,14 @@ export default function Portfolio() {
                           <div className="w-2.5 h-2.5 bg-primary rounded-full animate-pulse shrink-0 mt-1"></div>
                           <h3 className="text-base font-bold leading-snug">{project.title}</h3>
                         </div>
-                        <span className="text-xs code-font text-gray-500 shrink-0">{project.year}</span>
+                        <div className="flex items-center gap-2 shrink-0">
+                          {"badge" in project && project.badge && (
+                            <span className="px-2 py-0.5 bg-gradient-to-r from-primary/30 to-secondary/30 text-primary text-xs rounded-full font-medium">
+                              {project.badge}
+                            </span>
+                          )}
+                          <span className="text-xs code-font text-gray-500">{project.year}</span>
+                        </div>
                       </div>
                       <p className="text-gray-300 text-sm mb-4 leading-relaxed flex-1">{project.description}</p>
                       <div className="flex flex-wrap gap-1.5 mb-4">
@@ -478,16 +438,16 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Certifications Section */}
+      {/* Certifications & Community Section */}
       <section id="certifications" className="py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <ScrollReveal>
               <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-                <span className="text-accent">Certifications</span>
+                Certifications & <span className="text-accent">Community</span>
               </h2>
             </ScrollReveal>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-1 gap-6 mb-12">
               {certifications.map((cert, index) => (
                 <ScrollReveal key={cert.title} delay={index * 150}>
                   <Card className="glass-card rounded-xl p-6 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 h-full">
@@ -517,6 +477,24 @@ export default function Portfolio() {
                 </ScrollReveal>
               ))}
             </div>
+            <ScrollReveal delay={300}>
+              <h3 className="text-2xl font-bold text-center mb-8 text-secondary">Community & Events</h3>
+            </ScrollReveal>
+            <div className="grid md:grid-cols-3 gap-6">
+              {community.map((item, index) => (
+                <ScrollReveal key={item.title} delay={400 + index * 150}>
+                  <Card className="glass-card rounded-xl p-6 hover:shadow-lg hover:shadow-secondary/20 transition-all duration-300 h-full">
+                    <CardContent className="p-0 text-center">
+                      <div className="w-12 h-12 bg-gradient-to-r from-secondary to-accent rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i className={`${item.icon} text-white text-xl`}></i>
+                      </div>
+                      <h4 className="font-bold text-sm leading-snug mb-1">{item.title}</h4>
+                      <p className="text-gray-400 text-xs">{item.type}</p>
+                    </CardContent>
+                  </Card>
+                </ScrollReveal>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -532,7 +510,7 @@ export default function Portfolio() {
                     Get My <span className="text-primary">Resume</span>
                   </h2>
                   <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-                    Download my full resume covering agentic AI projects, data engineering experience, and my growing ML expertise.
+                    Download my full resume covering agentic AI projects, multi-agent systems, RAG architectures, and AI governance expertise.
                   </p>
                   <Button
                     onClick={handleResumeDownload}
@@ -614,6 +592,20 @@ export default function Portfolio() {
                       <div>
                         <p className="font-semibold">GitHub</p>
                         <p className="text-sm">github.com/samsuljahith</p>
+                      </div>
+                    </a>
+                    <a
+                      href="https://samsul-jahith-portfolio.onrender.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-4 text-gray-300 hover:text-secondary transition-colors group"
+                    >
+                      <div className="w-12 h-12 bg-gradient-to-r from-secondary to-primary rounded-lg flex items-center justify-center group-hover:shadow-lg group-hover:shadow-secondary/50 transition-all">
+                        <i className="fas fa-globe text-white"></i>
+                      </div>
+                      <div>
+                        <p className="font-semibold">Portfolio</p>
+                        <p className="text-sm">samsul-jahith-portfolio.onrender.com</p>
                       </div>
                     </a>
                   </div>
