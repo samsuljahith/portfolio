@@ -1,44 +1,55 @@
-# Portfolio — Cyberpunk AI Engineer Terminal
+# Samsul Jahith S — AI Engineer Portfolio
 
-An interactive personal portfolio built as a cyberpunk-themed terminal interface. Features a Three.js animated neural core, scroll-reveal sections, a radar competency chart, and an ambient sound system — all in vanilla React loaded directly from a CDN (no build step).
+A professional portfolio for an AI / Generative AI Engineer, built with Next.js 15, TypeScript, Tailwind CSS, Framer Motion, and shadcn/ui. Minimal-brutalist design (light paper background, thick black borders, hard offset shadows, electric-blue accent) with a working Nodemailer contact form.
 
-## Features
+## Stack
 
-- **Boot sequence** — animated terminal startup before content renders
-- **Neural core** — Three.js particle swarm + 2D starfield grid that reacts to mouse and scroll
-- **Scroll-spy navigation** — active section tracking with smooth scroll
-- **Ability bars & radar chart** — animated skill stats across AI/ML, Programming, and AI Governance
-- **Projects showcase** — missions section with live project links
-- **Ambient SFX** — toggle-able sound effects on navigation
+- **Next.js 15** (App Router, React 19)
+- **TypeScript** + **Tailwind CSS**
+- **Framer Motion** for animations
+- **shadcn/ui** primitives (Radix + class-variance-authority)
+- **Nodemailer** for the contact form
+- **react-hook-form** + **zod** for form validation
 
-## Tech Stack
-
-| Layer | Tech |
-|-------|------|
-| UI | React 18 (CDN), vanilla JS |
-| 3D | Three.js |
-| Styling | Custom CSS (cyberpunk / dark theme) |
-| Server | Node.js (`server.js`) for local dev |
-
-## Running Locally
+## Getting started
 
 ```bash
 npm install
-node server.js
-# Open http://localhost:3000
+npm run dev
 ```
 
-Or open `index.html` directly in a browser (no build required).
+Open [http://localhost:3000](http://localhost:3000).
 
-## Structure
+## Configuration
 
-```
-├── index.html        # Entry point — loads React + Three.js from CDN
-├── app.jsx           # Root component, boot flow, scroll-spy, nav
-├── sections.jsx      # All page sections (hero, dossier, abilities, etc.)
-├── hud.jsx           # Heads-up display: navbar, toast, sound toggle
-├── neural-core.js    # Three.js agent swarm + 2D starfield canvas
-├── sound.js          # Ambient SFX system
-├── data.js           # All portfolio content (bio, projects, skills)
-└── styles.css        # Full cyberpunk stylesheet
+Editable content lives in [`lib/data.ts`](lib/data.ts) — profile, skills, projects, experience, and education. The headshot is `public/profile.png`.
+
+### Contact form (optional)
+
+The contact form posts to `/api/contact` and sends email via SMTP. Copy `.env.example` to `.env.local` and fill in:
+
+| Variable | Description |
+| --- | --- |
+| `SMTP_HOST` | SMTP server host (e.g. `smtp.gmail.com`) |
+| `SMTP_PORT` | SMTP port (`587` STARTTLS or `465` SSL) |
+| `SMTP_USER` | SMTP username / sending address |
+| `SMTP_PASS` | SMTP password or app password |
+| `CONTACT_TO` | Recipient address (defaults to `SMTP_USER`) |
+
+If SMTP is not configured, the form gracefully tells visitors to email directly.
+
+## Deployment (Render)
+
+Configured as a Node web service:
+
+- **Build command:** `npm install && npm run build`
+- **Start command:** `npm start` (runs `next start` on `$PORT`)
+
+Add the SMTP environment variables in the Render dashboard to enable the contact form.
+
+## Build
+
+```bash
+npm run build
+npm start
 ```

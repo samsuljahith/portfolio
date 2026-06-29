@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 45 33% 96%;
+    --foreground: 0 0% 7%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 7%;
+    --primary: 227 100% 59%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 45 20% 90%;
+    --secondary-foreground: 0 0% 7%;
+    --muted: 45 15% 88%;
+    --muted-foreground: 0 0% 38%;
+    --accent: 227 100% 59%;
+    --accent-foreground: 0 0% 100%;
+    --border: 0 0% 7%;
+    --input: 0 0% 7%;
+    --ring: 227 100% 59%;
+    --radius: 0rem;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  ::selection {
+    @apply bg-primary text-primary-foreground;
+  }
+}
+
+@layer components {
+  /* Brutalist surface: square, thick black border, hard offset shadow */
+  .brut {
+    @apply border-2 border-black bg-card;
+    box-shadow: 4px 4px 0 0 #000;
+  }
+  .brut-sm {
+    @apply border-2 border-black bg-card;
+    box-shadow: 3px 3px 0 0 #000;
+  }
+  .brut-hover {
+    @apply transition-all duration-150;
+  }
+  .brut-hover:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 0 #000;
+  }
+  .accent-mark {
+    @apply inline-block h-3 w-3 border-2 border-black bg-primary;
+  }
+  .section-pad {
+    @apply scroll-mt-24 py-20 md:py-28;
+  }
+}
+
+/* Flat brutalist scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(45 33% 96%);
+  border-left: 2px solid #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(227 100% 59%);
+}
