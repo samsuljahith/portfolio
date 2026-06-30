@@ -1,0 +1,23 @@
+name: Keep Render warm
+
+# Pings the live health endpoint so the Render free web service does not go
+# 15 minutes without inbound traffic (which would trigger a 30-60s cold start).
+#
+# NOTE: GitHub Actions cron is best-effort — runs can be delayed by several
+# minutes under load, and scheduled workflows are auto-disabled after 60 days
+# without repo activity. For reliable warming, prefer an external pinger such as
+# cron-job.org or UptimeRobot (see README). This workflow is a free fallback.
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping health endpoint
+        run: |
+          curl -sS -m 90 -o /dev/null -w "HTTP %{http_code} in %{time_total}s\n" \
+            https://samsul-jahith-portfolio.onrender.com/api/health
