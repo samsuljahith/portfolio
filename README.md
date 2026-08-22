@@ -65,8 +65,8 @@ Add `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` in the Render dashboard to enabl
 
 Render's free web services spin down after 15 minutes of inactivity; the next request then waits 30–60s for a cold start. To keep the service warm without changing your URL or upgrading, ping the health endpoint every ~10 minutes:
 
-- **Recommended:** create a free job at [cron-job.org](https://cron-job.org) (or [UptimeRobot](https://uptimerobot.com)) that does a `GET` on `https://samsul-jahith-portfolio.onrender.com/api/health` every 10 minutes.
-- **Fallback:** the committed GitHub Actions workflow [`.github/workflows/keep-warm.yml`](.github/workflows/keep-warm.yml) pings the same endpoint. Note: Actions cron can be delayed and auto-disables after 60 days of repo inactivity, so an external pinger is more reliable.
+- **Primary:** create a free job at [cron-job.org](https://cron-job.org) (or [UptimeRobot](https://uptimerobot.com)) that does a `GET` on `https://samsul-jahith-portfolio.onrender.com/api/health` every 10 minutes. Use a ~90s request timeout so a cold start does not look like a failure. This is the reliable warmer because it is not tied to GitHub activity.
+- **Fallback only:** the committed GitHub Actions workflow [`.github/workflows/keep-warm.yml`](.github/workflows/keep-warm.yml) pings the same endpoint. Actions cron can be delayed under load, and **GitHub automatically disables scheduled workflows after 60 days without a repository push** — re-enable on the workflow page or push any commit to reset the clock. Prefer the external pinger so warming continues even if Actions is disabled.
 
 Always-on usage is ~720 h/month, within Render's 750 free instance-hours (assuming this is the only free web service in your workspace). The only way to fully eliminate cold starts (and unblock SMTP) is Render's paid tier (~$7/mo).
 
