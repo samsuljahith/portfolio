@@ -30,7 +30,7 @@ export function Projects() {
             </h3>
           </Reveal>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {secondaryProjects.map((project, i) => (
+            {secondaryProjects.slice(0, 4).map((project, i) => (
               <Reveal
                 key={project.title}
                 delay={(i % 3) * 0.06}

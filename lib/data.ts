@@ -17,11 +17,7 @@ export const profile = {
     "Building production-minded LLM applications — RAG pipelines, multi-agent systems, and evaluation & guardrails for reliable, grounded outputs.",
   summary:
     "Generative AI / AI Engineer and MSc Data Science student (University of Hertfordshire, 2026) building production-minded LLM applications — RAG pipelines, multi-agent / agentic systems, multi-provider LLM integrations, and evaluation & guardrails for reliable, grounded outputs. Open-source builder, hackathon builder, and research collaborator in the Singapore AI community.",
-  status: [
-    "Open to AI/ML roles in Singapore",
-    "MSc Data Science @ UoH",
-    "AWS AI Practitioner",
-  ],
+  status: ["Open to AI/ML roles in Singapore", "MSc Data Science @ UoH"],
 };
 
 export const stats = [
@@ -148,9 +144,9 @@ export const featuredProjects: Project[] = [
     github: "https://github.com/nudgytdeveloper/existential-crisis-robot-public",
   },
   {
-    title: "Ka-Nova Research — JASSS Journal Co-Author",
+    title: "Ka-Nova Research — IEEE Access Co-Author",
     blurb:
-      "LLM elite-agent evaluation in a Generative Agent-Based Model (10,000 Mesa agents, 3 LangChain LLM agents) simulating 50 years of governance. Third author under Dr. Md Saifullah, targeting JASSS (Aug 2026).",
+      "LLM elite-agent evaluation in a Generative Agent-Based Model (10,000 Mesa agents, 3 LangChain LLM agents) simulating 50 years of governance. Co-author, submitted to IEEE Access.",
     highlights: [
       "Output variance analysis (30+ seeds), governance-alignment scoring, and prompt-sensitivity testing.",
       "Evaluated across 45,000+ LLM decisions.",
@@ -317,7 +313,7 @@ export const education: EducationItem[] = [
   {
     school: "University of Hertfordshire (via PSB Academy, Singapore)",
     degree: "MSc Data Science",
-    period: "2026 — 2027",
+    period: "2025 — 2026",
   },
   {
     school: "Panimalar Institute of Technology",
